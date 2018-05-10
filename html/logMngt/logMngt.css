@@ -1,0 +1,131 @@
+/*公用*/
+/*清除浮动*/
+.clearfix{
+    display: inline-block;
+}
+.clearfix:after{
+    display:block;
+    content: '';
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.logMngt-title {
+    width:100%;
+    height:32px;
+}
+.logMngt-title span{
+    height:32px;
+    line-height:32px;
+    font-size:23px;
+    float:left;
+}
+/*logMngt页面*/
+.logMngt-list-query{
+    /*margin:0px 0 20px;*/
+    /*padding:20px 3% 0 3%;*/
+    background:#fff;
+}
+.logMngt-list-query:after{
+    display:block;
+    content:"";
+    clear:both;
+}
+.logMngt-list-query .ms-input{
+    width: 47.9%;
+}
+.logMngt-list-query .ms-input:nth-of-type(2n){
+    margin-right: 0px;
+    float:right;
+}
+.cont{
+    margin-top: 15px;
+    background: #FFFFFF;
+    min-height: 700px;
+    padding: 30px;
+}
+.logMngt-operate-time{
+    width: 48.9%;
+}
+.logMngt-operate-time .timeInput{
+    height: 50px;
+    width: 44.5%;
+    float: left;
+    border: 1px solid #e1e3e5;
+    padding-left: 13px;
+    position: relative;
+}
+.rang {
+    width: 5%;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    margin: 0.75%;
+}
+.datePicture {
+    width: 20px;
+    height: 24px;
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+    background: url('image/notice.png') -47px -23px;
+}
+.logMngt-operate-time .timeInput:nth-of-type(2n){
+    float: right;
+}
+.input-top{
+    display: inline;
+    font-size: 12px;
+    color: #91989e;
+    line-height: 26px;
+}
+.input-bottom input {
+    border: 0px;
+}
+.w-required{
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    font-size: 12px;
+    color: #e50017;
+}
+
+/*查询结果显示模块*/
+.listbar{
+    margin-top: 20px;
+}
+.logTreeListHead{
+    list-style: none;
+    height: 30px;
+    color: #7b8084;
+    line-height: 30px;
+    border-top: 1px solid #bac0c6;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+}
+.logTreeListHead span:nth-child(1) {
+    width: 6%;
+    margin-left: 3%;
+}
+.logTreeListHead span:nth-child(2) {
+    width: 17%;
+}
+.logTreeListHead span:nth-child(3) {
+    width: 13%;
+}
+.logTreeListHead span:nth-child(4) {
+    width: 18%;
+}
+.logTreeListHead span:nth-child(5) {
+    width: 16%;
+}
+.logTreeListHead span:nth-child(6) {
+    width: 23%;
+}
+.logTreeListHead span {
+    display: inline-block;
+    line-height: 14px;
+    padding-left: 0.5434783%;
+    border-left: 1px solid #e5e5e5;
+}
