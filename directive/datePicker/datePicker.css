@@ -8,7 +8,7 @@
 }
 .container p{
     font-size: 18px;
-    color: #F44336;
+    color: #ff3251;
 }
 .flex {
     display: -webkit-flex;
@@ -20,7 +20,7 @@
     width: 100%;
     height: 90px;
     line-height: 80px;
-    color: #F44336;
+    color: #ff3251;
 }
 .week-cell {
     display: table-cell;
@@ -39,7 +39,7 @@
 .arrow {
     height: 25px;
     width: 25px;
-    border: solid #F44336;
+    border: solid #ff3251;
     border-width: 0 6px 6px 0;
     margin: 22.5px auto;
 }
@@ -78,19 +78,19 @@
     color: #BDBDBD;
 }
 .today {
-    color: #F44336;
+    color: #ff3251;
 }
 .today-selected {
     color: white;
-    background-color: #F44336;
+    background-color: #ff3251;
 }
 .footer {
     text-align: center;
 }
 .footer span{
-    color: #F44336;
+    color: #ff3251;
 }
 .footer a{
     text-decoration: none;
-    color: #F44336;
+    color: #ff3251;
 }

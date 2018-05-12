@@ -129,3 +129,161 @@
     padding-left: 0.5434783%;
     border-left: 1px solid #e5e5e5;
 }
+/*列表查询结果单元条样式*/
+.logListResultItem span:nth-child(1) {
+    width: 6%;
+    margin-left: 3%;
+}
+.logListResultItem span:nth-child(2) {
+    width: 17%;
+}
+.logListResultItem span:nth-child(3) {
+    width: 13%;
+}
+.logListResultItem span:nth-child(4) {
+    width: 18%;
+}
+.logListResultItem span:nth-child(5) {
+    width: 16%;
+}
+.logListResultItem span:nth-child(6) {
+    width: 23%;
+}
+.logListResultItem {
+    position: relative;
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+}
+.logListResultItem span {
+    display: inline-block;
+    line-height: 14px;
+    padding-left: 0.5434783%;
+    border-left: 1px solid #e5e5e5;
+}
+.logListResultItem i {
+    position: absolute;
+    top:-4px;
+    left:0px;
+}
+.itemDetail{
+    width: 100%;
+    height:100px;
+    background-color: #e1e3e8;
+}
+.itemDetailLeft {
+    width: 50%;
+}
+.itemDetailright{
+    width: 50%;
+}
+
+.moveUp{                          /*箭头占位符，规定宽高等*/
+    width: 15px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.moveUp:before, .moveUp:after{     /*伪元素相同属性提取*/
+    content: '';
+    border-color:transparent;      /*边框颜色透明*/
+    border-style: solid;
+    position: absolute;           /*绝对定位，分别定位before和after描绘的内容*/
+}
+.moveUp:before{                 /*伪元素before绘制箭头尾部矩形*/
+    border: none;
+    background: skyblue;
+    height: 60%;
+    width: 30%;
+    top:50%;
+    left: 8px;
+}
+.moveUp:after{                /*伪元素after绘制箭头的头部三角形*/
+    left: 3px;
+    top: -5%;
+    border-width: 7px;
+    border-bottom-color: skyblue;      /*如果绘制向下三角形的话，用border-top-color:#555;*/
+}
+
+.moveDown{                          /*箭头占位符，规定宽高等*/
+    width: 15px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.moveDown:before, .moveDown:after{     /*伪元素相同属性提取*/
+    content: '';
+    border-color:transparent;      /*边框颜色透明*/
+    border-style: solid;
+    position: absolute;           /*绝对定位，分别定位before和after描绘的内容*/
+}
+.moveDown:before{                 /*伪元素before绘制箭头尾部矩形*/
+    border: none;
+    background: skyblue;
+    height: 60%;
+    width: 30%;
+    top:50%;
+    left: 8px;
+}
+.moveDown:after{                /*伪元素after绘制箭头的头部三角形*/
+    left: 3px;
+    bottom: -69%;
+    border-width: 7px;
+    border-top-color: skyblue;      /*如果绘制向下三角形的话，用border-top-color:#555;*/
+}
+
+/*模态框样式*/
+.modalDirective #mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #999999;
+    width: 100%;
+    height: 100%;
+    z-index: 1200;
+    opacity: 0.5;
+}
+
+.modalDirective .modalList{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 5px 10px;
+    transform: translate(-50%,-50%);
+    width: 700px;
+    height: 450px;
+    background: #fff;
+    z-index: 1300;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.modalDirective .modalList .listTitle{
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #999;
+}
+.modalDirective .modalList .listTitle h3{
+    height: 100%;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+
+.table>thead>tr>th{
+    padding: 8px;
+    line-height: 1.42857143;
+}
+th {
+    text-align: left;
+}
